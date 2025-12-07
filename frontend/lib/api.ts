@@ -7,7 +7,7 @@ let accessToken: string | null = null;
 export async function login(username: string, password: string) {
   const response = await axios.post(`${API_BASE}/accounts/login/`, { username, password });
   accessToken = response.data.access;
-  if (typeof window !== "undefined") {
+  if (typeof window !== "undefined" && accessToken) {
     window.localStorage.setItem("accessToken", accessToken);
   }
   return response.data;
