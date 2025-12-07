@@ -33,3 +33,38 @@ export async function getModuleById(id: string) {
   });
   return response.data;
 }
+
+export async function getModules() {
+  const response = await axios.get(`${API_BASE}/modules/`, {
+    headers: getAuthHeaders(),
+  });
+  return response.data;
+}
+
+export async function getProformas() {
+  const response = await axios.get(`${API_BASE}/proformas/`, {
+    headers: getAuthHeaders(),
+  });
+  return response.data;
+}
+
+export async function getProformaById(id: string) {
+  const response = await axios.get(`${API_BASE}/proformas/${id}/`, {
+    headers: getAuthHeaders(),
+  });
+  return response.data;
+}
+
+export async function getAssignments() {
+  const response = await axios.get(`${API_BASE}/assignments/`, {
+    headers: getAuthHeaders(),
+  });
+  return response.data;
+}
+
+export async function getAssignmentById(id: string) {
+  const response = await axios.get(`${API_BASE}/assignments/${id}/`, {
+    headers: getAuthHeaders(),
+  });
+  return response.data;
+}
