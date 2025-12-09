@@ -49,6 +49,6 @@ class PGItemCompliance(BaseModel):
         unique_together = ['institution', 'item']
     
     def __str__(self):
-        inst_name = self.institution.name if self.institution else "No Institution"
-        item_code = self.item.code or self.item.id
+        inst_name = getattr(self.institution, 'name', 'No Institution') if self.institution else "No Institution"
+        item_code = self.item.code or str(self.item.id)
         return f"{inst_name} - {item_code} - {self.status}"

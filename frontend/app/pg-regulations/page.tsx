@@ -328,8 +328,11 @@ export default function PGRegulationsPage() {
                         </label>
                         <textarea
                           value={compliance?.comment || ""}
-                          onChange={(e) => handleCommentChange(item.id, e.target.value)}
-                          onBlur={(e) => handleCommentChange(item.id, e.target.value)}
+                          onBlur={(e) => {
+                            if (compliance) {
+                              handleCommentChange(item.id, e.target.value);
+                            }
+                          }}
                           placeholder="Add any comments or notes..."
                           disabled={!compliance || saving}
                           style={{
@@ -353,8 +356,11 @@ export default function PGRegulationsPage() {
                         <input
                           type="url"
                           value={compliance?.evidence_url || ""}
-                          onChange={(e) => handleEvidenceChange(item.id, e.target.value)}
-                          onBlur={(e) => handleEvidenceChange(item.id, e.target.value)}
+                          onBlur={(e) => {
+                            if (compliance) {
+                              handleEvidenceChange(item.id, e.target.value);
+                            }
+                          }}
                           placeholder="https://..."
                           disabled={!compliance || saving}
                           style={{

@@ -89,14 +89,24 @@ export async function getPGCompliances(institutionId?: string, itemId?: string) 
   return response.data;
 }
 
-export async function createPGCompliance(data: any) {
+export async function createPGCompliance(data: {
+  institution: string;
+  item: string;
+  status: string;
+  comment?: string;
+  evidence_url?: string;
+}) {
   const response = await axios.post(`${API_BASE}/pg/compliance/`, data, {
     headers: getAuthHeaders(),
   });
   return response.data;
 }
 
-export async function updatePGCompliance(id: string, data: any) {
+export async function updatePGCompliance(id: string, data: {
+  status?: string;
+  comment?: string;
+  evidence_url?: string;
+}) {
   const response = await axios.patch(`${API_BASE}/pg/compliance/${id}/`, data, {
     headers: getAuthHeaders(),
   });
