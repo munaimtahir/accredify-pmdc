@@ -43,6 +43,7 @@ export default function DashboardPage() {
               <li><a href="/modules" style={{ color: "blue", textDecoration: "underline" }}>View Modules</a></li>
               <li><a href="/proformas" style={{ color: "blue", textDecoration: "underline" }}>View Proforma Templates</a></li>
               <li><a href="/assignments" style={{ color: "blue", textDecoration: "underline" }}>View Assignments</a></li>
+              <li><a href="/pg-regulations" style={{ color: "blue", textDecoration: "underline" }}>PG Regulations Checklist</a></li>
             </ul>
           </div>
         </div>

@@ -26,7 +26,8 @@ class Command(BaseCommand):
         if override_path:
             path = Path(override_path).expanduser().resolve()
         else:
-            base_dir = Path(getattr(settings, "BASE_DIR", Path(__file__).resolve().parents[4]))
+            # Go up from backend/modules/management/commands to project root
+            base_dir = Path(__file__).resolve().parents[4]
             path = base_dir / "docs" / "MODULE_PG_PMD2023.yaml"
         if not path.exists():
             raise CommandError(f"YAML file not found at: {path}")

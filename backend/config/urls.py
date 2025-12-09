@@ -10,4 +10,5 @@ urlpatterns = [
     path('api/evidence/', include('evidence.urls')),
     path('api/organizations/', include('organizations.urls')),
     path('api/dashboard/', include('dashboard.urls')),
+    path('api/pg/', include('pg.urls')),
 ]
