@@ -68,3 +68,37 @@ export async function getAssignmentById(id: string) {
   });
   return response.data;
 }
+
+export async function getInstitutions() {
+  const response = await axios.get(`${API_BASE}/organizations/institutions/`, {
+    headers: getAuthHeaders(),
+  });
+  return response.data;
+}
+
+export async function getPGCompliances(institutionId?: string, itemId?: string) {
+  let url = `${API_BASE}/pg/compliance/`;
+  const params = new URLSearchParams();
+  if (institutionId) params.append('institution', institutionId);
+  if (itemId) params.append('item', itemId);
+  if (params.toString()) url += `?${params.toString()}`;
+  
+  const response = await axios.get(url, {
+    headers: getAuthHeaders(),
+  });
+  return response.data;
+}
+
+export async function createPGCompliance(data: any) {
+  const response = await axios.post(`${API_BASE}/pg/compliance/`, data, {
+    headers: getAuthHeaders(),
+  });
+  return response.data;
+}
+
+export async function updatePGCompliance(id: string, data: any) {
+  const response = await axios.patch(`${API_BASE}/pg/compliance/${id}/`, data, {
+    headers: getAuthHeaders(),
+  });
+  return response.data;
+}
