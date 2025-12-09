@@ -1,2 +1,475 @@
-# Placeholder for full PMDC-PG checklist structure.
-# To be expanded by AI/devs using official regulations.
+module:
+  code: "PMDC-PG-2023"
+  title: "PMDC Postgraduate Accreditation (2023)"
+  authority: "PMDC"
+  version: "1.0"
+  description: "Accreditation checklist for postgraduate medical and dental training programs under PMDC Regulations 2023."
+
+sections:
+
+  # -------------------------
+  # SECTION C1
+  # -------------------------
+  - code: "C1"
+    title: "Opening a New Postgraduate Program"
+    weight: 10
+    items:
+      - code: "C1.1"
+        text: "Institution holds a valid affiliation permission letter from a recognized Degree Awarding Institute."
+        evidence: "DAI Affiliation Letter"
+        weight: 3
+        critical: true
+
+      - code: "C1.2"
+        text: "Faculty availability meets PMDC minimum qualifications and number requirements."
+        evidence: "Faculty list, PMDC registration certificates"
+        weight: 3
+        critical: true
+
+      - code: "C1.3"
+        text: "Approved curriculum is available and aligned with PMDC’s postgraduate training structure."
+        evidence: "Curriculum document"
+        weight: 2
+        critical: false
+
+      - code: "C1.4"
+        text: "Required resources (space, beds, laboratory capacity, equipment) match program needs."
+        evidence: "Resource inventory"
+        weight: 2
+        critical: true
+
+      - code: "C1.5"
+        text: "Student admission policy follows transparent merit-based selection as per regulations."
+        evidence: "Admission policy, Merit list"
+        weight: 1
+        critical: false
+
+
+  # -------------------------
+  # SECTION C2
+  # -------------------------
+  - code: "C2"
+    title: "Initial Evaluation by PG Section"
+    weight: 5
+    items:
+      - code: "C2.1"
+        text: "Application submitted in Appendix-I format with all required enclosures."
+        evidence: "Appendix-I form, Enclosure checklist"
+        weight: 2
+        critical: true
+
+      - code: "C2.2"
+        text: "PG Section completed document verification within stipulated time."
+        evidence: "PG Section verification note"
+        weight: 1
+        critical: false
+
+      - code: "C2.3"
+        text: "Institution responded to deficiencies or clarification requests."
+        evidence: "Clarification response, Revised documents"
+        weight: 2
+        critical: false
+
+
+  # -------------------------
+  # SECTION C3
+  # -------------------------
+  - code: "C3"
+    title: "Inspection and Verification"
+    weight: 10
+    items:
+      - code: "C3.1"
+        text: "Inspectors appointed by the Council President as per regulation."
+        evidence: "Inspector appointment notification"
+        weight: 1
+        critical: true
+
+      - code: "C3.2"
+        text: "Physical inspection conducted covering curriculum, faculty, facilities, and compliance with minimum standards."
+        evidence: "Inspection report"
+        weight: 3
+        critical: true
+
+      - code: "C3.3"
+        text: "Verification of submitted documents completed and matches on-site findings."
+        evidence: "Verification checklist"
+        weight: 2
+        critical: true
+
+      - code: "C3.4"
+        text: "Institution submitted compliance to deficiencies identified during inspection."
+        evidence: "Compliance report"
+        weight: 2
+        critical: false
+
+      - code: "C3.5"
+        text: "Inspection team certifies that deficiencies do not compromise training quality."
+        evidence: "Inspector certification"
+        weight: 2
+        critical: true
+
+
+  # -------------------------
+  # SECTION C4
+  # -------------------------
+  - code: "C4"
+    title: "Council Evaluation and Decision"
+    weight: 8
+    items:
+      - code: "C4.1"
+        text: "PG Committee reviewed inspection findings and formulated recommendations."
+        evidence: "Committee minutes"
+        weight: 2
+        critical: true
+
+      - code: "C4.2"
+        text: "Council reviewed recommendations as per PMDC governance rules."
+        evidence: "Council minutes"
+        weight: 2
+        critical: true
+
+      - code: "C4.3"
+        text: "Approval or refusal letter issued to institution."
+        evidence: "Official letter"
+        weight: 2
+        critical: true
+
+      - code: "C4.4"
+        text: "Rectification period granted when refusal issued."
+        evidence: "Rectification notice"
+        weight: 1
+        critical: false
+
+      - code: "C4.5"
+        text: "Institution submitted rectification evidence within allowed timeframe."
+        evidence: "Rectification response"
+        weight: 1
+        critical: false
+
+
+  # -------------------------
+  # SECTION C5
+  # -------------------------
+  - code: "C5"
+    title: "Federal Government Notification"
+    weight: 5
+    items:
+      - code: "C5.1"
+        text: "Program recommended for inclusion in the Second Schedule of PMDC Act."
+        evidence: "Recommendation letter"
+        weight: 2
+        critical: true
+
+      - code: "C5.2"
+        text: "Federal Government issued Gazette Notification."
+        evidence: "Gazette Notification"
+        weight: 2
+        critical: true
+
+      - code: "C5.3"
+        text: "Institution received official permission letter within 6 months of inspection."
+        evidence: "Permission letter"
+        weight: 1
+        critical: true
+
+
+  # -------------------------
+  # SECTION C6
+  # -------------------------
+  - code: "C6"
+    title: "Admission of Students"
+    weight: 10
+    items:
+      - code: "C6.1"
+        text: "Admission started only after issuance of permission letter."
+        evidence: "Permission letter, Admission policy"
+        weight: 2
+        critical: true
+
+      - code: "C6.2"
+        text: "Program included in Second Schedule at time of admission."
+        evidence: "Gazette Notification copy"
+        weight: 1
+        critical: true
+
+      - code: "C6.3"
+        text: "Merit-based selection rules strictly followed."
+        evidence: "Merit list, Selection criteria"
+        weight: 2
+        critical: true
+
+      - code: "C6.4"
+        text: "Trainee registration completed within 3 months."
+        evidence: "Trainee registration data"
+        weight: 2
+        critical: false
+
+      - code: "C6.5"
+        text: "Institution retained trainee records and documented progress."
+        evidence: "Student files, Record logs"
+        weight: 2
+        critical: false
+
+
+  # -------------------------
+  # SECTION C7
+  # -------------------------
+  - code: "C7"
+    title: "Qualification Framework Compliance"
+    weight: 10
+    items:
+      - code: "C7.1"
+        text: "Program duration matches PMDC’s defined framework."
+        evidence: "Curriculum outline"
+        weight: 2
+        critical: true
+
+      - code: "C7.2"
+        text: "Structured educational plan aligns with expected learning outcomes."
+        evidence: "Teaching plan, Learning outcomes"
+        weight: 2
+        critical: true
+
+      - code: "C7.3"
+        text: "Competency-based training outcomes are documented and tracked."
+        evidence: "Trainee portfolio"
+        weight: 1
+        critical: true
+
+      - code: "C7.4"
+        text: "Research component is included where required."
+        evidence: "Research guidelines"
+        weight: 1
+        critical: false
+
+      - code: "C7.5"
+        text: "Training is aligned with PMDC-defined educational levels (IIA, IIB, III)."
+        evidence: "Curriculum mapping"
+        weight: 2
+        critical: true
+
+      - code: "C7.6"
+        text: "Any new program is reported to PMDC before admission begins."
+        evidence: "Notification to PMDC"
+        weight: 2
+        critical: true
+
+
+  # -------------------------
+  # SECTION C8
+  # -------------------------
+  - code: "C8"
+    title: "Training Settings and Resources"
+    weight: 12
+    items:
+      - code: "C8.1"
+        text: "Adequate number of qualified full-time faculty available."
+        evidence: "Faculty resumes, PMDC licenses"
+        weight: 3
+        critical: true
+
+      - code: "C8.2"
+        text: "Teaching hospital meets minimum bed occupancy and patient load."
+        evidence: "Hospital census reports"
+        weight: 2
+        critical: true
+
+      - code: "C8.3"
+        text: "Skills lab and training facilities meet PMDC requirements."
+        evidence: "Skills lab inventory, Photos"
+        weight: 1
+        critical: false
+
+      - code: "C8.4"
+        text: "Adequate classrooms, meeting rooms, and departmental space exist."
+        evidence: "Infrastructure layout"
+        weight: 1
+        critical: false
+
+      - code: "C8.5"
+        text: "Diagnostic and laboratory support services are functional."
+        evidence: "Laboratory reports, Radiology services"
+        weight: 2
+        critical: true
+
+      - code: "C8.6"
+        text: "Access to PG library, journals, textbooks, and digital resources."
+        evidence: "Library resource list"
+        weight: 1
+        critical: false
+
+      - code: "C8.7"
+        text: "IT infrastructure supports academic use (Internet, LMS access)."
+        evidence: "IT policy"
+        weight: 1
+        critical: false
+
+      - code: "C8.8"
+        text: "Inadequacies compensated through inter-institutional agreements."
+        evidence: "MoUs"
+        weight: 1
+        critical: false
+
+
+  # -------------------------
+  # SECTION C9
+  # -------------------------
+  - code: "C9"
+    title: "Evaluation of Training Process"
+    weight: 12
+    items:
+      - code: "C9.1"
+        text: "Structured trainee evaluation system exists."
+        evidence: "Assessment policy"
+        weight: 2
+        critical: true
+
+      - code: "C9.2"
+        text: "In-training assessment conducted as per schedule."
+        evidence: "Exam results, Assessment forms"
+        weight: 2
+        critical: true
+
+      - code: "C9.3"
+        text: "Faculty evaluation conducted twice every accreditation cycle."
+        evidence: "Faculty evaluation records"
+        weight: 1
+        critical: false
+
+      - code: "C9.4"
+        text: "Regular academic meetings documented."
+        evidence: "Meeting minutes"
+        weight: 1
+        critical: false
+
+      - code: "C9.5"
+        text: "Trainee feedback collected and analyzed."
+        evidence: "Feedback forms"
+        weight: 1
+        critical: false
+
+      - code: "C9.6"
+        text: "Corrective actions taken based on feedback results."
+        evidence: "Action plans"
+        weight: 1
+        critical: false
+
+      - code: "C9.7"
+        text: "Portfolio/logbook used to track trainee progress."
+        evidence: "Logbooks"
+        weight: 2
+        critical: true
+
+
+  # -------------------------
+  # SECTION C10
+  # -------------------------
+  - code: "C10"
+    title: "Assessment of Trainees"
+    weight: 12
+    items:
+      - code: "C10.1"
+        text: "Constructive feedback provided regularly."
+        evidence: "Feedback logs"
+        weight: 1
+        critical: false
+
+      - code: "C10.2"
+        text: "Written criteria for formative and summative assessments documented."
+        evidence: "Assessment criteria"
+        weight: 2
+        critical: true
+
+      - code: "C10.3"
+        text: "Supervisor certification mandatory before trainee appears in exam."
+        evidence: "Supervisor certificate"
+        weight: 2
+        critical: true
+
+      - code: "C10.4"
+        text: "External examiners appointed as per PMDC policy."
+        evidence: "Appointment letters"
+        weight: 2
+        critical: true
+
+      - code: "C10.5"
+        text: "Examiner panel remains consistent for written, practical, and oral exams."
+        evidence: "Examiner list"
+        weight: 2
+        critical: true
+
+      - code: "C10.6"
+        text: "External examiner not repeated more than 3 years consecutively."
+        evidence: "Examiner history"
+        weight: 1
+        critical: false
+
+
+  # -------------------------
+  # SECTION C11
+  # -------------------------
+  - code: "C11"
+    title: "Distance Learning Programs (If Applicable)"
+    weight: 5
+    items:
+      - code: "C11.1"
+        text: "DL program approved by Council prior to admission."
+        evidence: "Approval letter"
+        weight: 2
+        critical: true
+
+      - code: "C11.2"
+        text: "DL offers identical credit hours and duration as on-campus program."
+        evidence: "Curriculum comparison"
+        weight: 1
+        critical: true
+
+      - code: "C11.3"
+        text: "University charter allows offering DL degree."
+        evidence: "Charter document"
+        weight: 1
+        critical: false
+
+      - code: "C11.4"
+        text: "Foreign DL programs evaluated and verified before equivalence."
+        evidence: "Equivalence documents"
+        weight: 1
+        critical: true
+
+
+  # -------------------------
+  # SECTION C12
+  # -------------------------
+  - code: "C12"
+    title: "Governance Requirements"
+    weight: 9
+    items:
+      - code: "C12.1"
+        text: "Qualified faculty appointed as Postgraduate Director."
+        evidence: "Appointment notification"
+        weight: 2
+        critical: true
+
+      - code: "C12.2"
+        text: "Clear organizational structure for PG governance."
+        evidence: "Organogram"
+        weight: 1
+        critical: false
+
+      - code: "C12.3"
+        text: "Annual budget allocated to support PG training."
+        evidence: "Budget statement"
+        weight: 2
+        critical: true
+
+      - code: "C12.4"
+        text: "Adequate resource allocation tracked for PG programs."
+        evidence: "Resource utilization reports"
+        weight: 1
+        critical: false
+
+      - code: "C12.5"
+        text: "Compliance with PMDC Regulations completed within 3 years."
+        evidence: "Compliance tracker"
+        weight: 2
+        critical: true
