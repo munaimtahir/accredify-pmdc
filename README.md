@@ -2,6 +2,8 @@
 
 A minimally functional, end-to-end system for managing PMDC (Pakistan Medical & Dental Council) Postgraduate program accreditation.
 
+> **🚀 Quick Deploy**: For rapid Docker deployment on VPS 34.93.19.177, see [QUICKSTART.md](./QUICKSTART.md)
+
 ## Tech Stack
 
 ### Backend
@@ -174,9 +176,49 @@ npm run build  # Verify production build
 npm run lint   # Run linter (when configured)
 ```
 
+## Docker Deployment
+
+### Quick Deployment on VPS
+
+The application is fully containerized and ready for production deployment. See [DEPLOYMENT.md](./DEPLOYMENT.md) for comprehensive deployment instructions.
+
+#### Quick Start:
+
+```bash
+# Clone the repository
+git clone https://github.com/munaimtahir/accredify-pmdc.git
+cd accredify-pmdc
+
+# Run deployment script
+./deploy.sh
+```
+
+#### Manual Deployment:
+
+```bash
+# Copy and configure environment variables
+cp .env.example .env
+# Edit .env with your production values
+
+# Build and start all services
+docker compose up -d --build
+
+# Access the application
+# Frontend: http://your-server-ip
+# API: http://your-server-ip/api/
+# Admin: http://your-server-ip/admin/
+```
+
+The deployment includes:
+- PostgreSQL database
+- Django backend with Gunicorn
+- Next.js frontend
+- Nginx reverse proxy
+
 ## Documentation
 
-See [IMPLEMENTATION_SUMMARY.md](./IMPLEMENTATION_SUMMARY.md) for detailed implementation notes.
+- [IMPLEMENTATION_SUMMARY.md](./IMPLEMENTATION_SUMMARY.md) - Detailed implementation notes
+- [DEPLOYMENT.md](./DEPLOYMENT.md) - Docker deployment guide
 
 ## License
 

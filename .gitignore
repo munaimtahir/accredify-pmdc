@@ -35,3 +35,8 @@ Thumbs.db
 # Environment
 .env
 .env.local
+
+# Backups
+backups/
+*.sql
+*.tar.gz
