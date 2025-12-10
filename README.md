@@ -2,6 +2,8 @@
 
 A minimally functional, end-to-end system for managing PMDC (Pakistan Medical & Dental Council) Postgraduate program accreditation.
 
+> **🚀 Quick Deploy**: For rapid Docker deployment on VPS 34.93.19.177, see [QUICKSTART.md](./QUICKSTART.md)
+
 ## Tech Stack
 
 ### Backend
